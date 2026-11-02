@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/image7.jpeg");
+            background-size: cover;
+        }
+        .form-div {
+            background-image: url("https://cdn.pixabay.com/animation/2025/09/06/09/17/09-17-31-120_512.gif");
+            border: 2px solid darkred;
+            width: 450px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 15px cyan;
+        }
+        .form-div h2{
+            color: orange;
+        }
+        input[type=text], input[type='password'] {
+            height: 50px;
+            text-align: center;
+            border: 2px solid darked;
+            margin: 5px;
+            font-size: 26px;
+            width: 300px;
+            border-radius: 15px;
+        }
+        input[type='text']:focus ,
+        input[type='password']:focus{
+            outline:none;
+            background-color: lightblue;
+        }
+        input[type='submit']{
+            background-color: chartreuse;
+            color:white;
+            border: none;
+            font-size: 20px;
+            padding: 15px 32px;
+            border-radius: 15px;
+            margin: 5px 0 15px 0;}
+         input[type='submit']:hover{
+             opacity:0,8;
+             cursor: pointer;
+             box-shadow: 0 0 15px lightgoldenrodyellow;
+
+         }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div">
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
